@@ -155,7 +155,7 @@ const noProxy = process.env.NO_PROXY === 'true';
   },
 }; */
 
-const serviceHost = 'http://localhost-base.com';
+const serviceHost = 'http://ernuo-api.com';
 export default (noProxy ? {
   'GET /*': serviceHost,
   'PUT /*': serviceHost,
