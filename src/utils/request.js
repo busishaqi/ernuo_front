@@ -56,6 +56,7 @@ function checkStatus(response) {
  * @return {object}           An object containing either "data" or "err"
  */
 export default function request(url, options) {
+
   const defaultOptions = {
     // credentials: 'include',
   };
@@ -93,7 +94,6 @@ export default function request(url, options) {
       };
     }
   }
-  
   return fetch(url, newOptions)
     .then(checkStatus)
     .then(response => {
